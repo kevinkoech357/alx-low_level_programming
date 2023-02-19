@@ -3,8 +3,9 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
- *
+ * main - assigns a random number to var n
+ * then checks whether it's +ve,-ve or 0
+ * then prints it onscreen
  * Return:Always 0 (success)
  */
 
@@ -27,6 +28,5 @@ int main(void)
 	{
 		printf("%d is zero\n", n);
 	}
-
 	return (0);
 }
