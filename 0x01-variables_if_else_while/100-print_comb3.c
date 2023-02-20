@@ -4,7 +4,7 @@
  * main - entry point
  * prints different combination of 2 digits
  * between 0-99
- * returns 0 if successful
+ * Return: Always 0 (successful)
  */
 
 int main(void)
