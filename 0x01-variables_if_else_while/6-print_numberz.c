@@ -2,19 +2,20 @@
 
 /**
  * main - Entry point
- *
+ * prints base10 numbers
+ * in ascending order
+ * usin putchar function
  * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	int i;
+	int base10;
 
-	for (i = 0; i < 10; i++)
+	for (base10 = 0; base10 < 10; base10++)
 	{
-		putchar(i % 10 + '0');
+		putchar(base10 % 10 + '0');
 	}
 	putchar('\n');
-
 	return (0);
 }
