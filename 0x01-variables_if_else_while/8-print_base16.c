@@ -2,20 +2,20 @@
 
 /**
  * main - Entry point
- *
+ * prints base16 numbers
+ * in lowercase
  * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	int n;
+	int base16;
 
-	for (n = 0; n < 10; n++)
-		putchar(n + '0');
+	for (base16 = 0; base16 < 10; base16++)
+		putchar(base16 + '0');
 
-	for (n = 0; n < 6; n++)
-		putchar(n + 'a');
+	for (base16 = 0; base16 < 6; base16++)
+		putchar(base16 + 'a');
 	putchar('\n');
-
 	return (0);
 }
