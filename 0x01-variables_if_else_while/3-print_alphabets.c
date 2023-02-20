@@ -2,18 +2,19 @@
 
 /**
  * main - Entry point
- *
+ * prints alphabet
+ * in lowercase then uppercase
  * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	int ch;
+	int alpha;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
-		putchar(ch);
-	for (ch = 'A'; ch <= 'Z'; ch++)
-		putchar(ch);
+	for (alpha = 'a'; alpha <= 'z'; alpha++)
+		putchar(alpha);
+	for (alpha = 'A'; alpha <= 'Z'; alpha++)
+		putchar(alpha);
 	putchar('\n');
 	return (0);
 }
