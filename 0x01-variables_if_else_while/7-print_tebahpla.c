@@ -2,19 +2,19 @@
 
 /**
  * main - Entry point
- *
+ * prints alphabet
+ * in reverse order
  * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	char ch = 'z';
-		while (ch >= 'a')
+	char revalpha = 'z';
+		while (revalpha >= 'a')
 		{
-			putchar(ch);
-			ch--;
+			putchar(revalpha);
+			revalpha--;
 		}
 	putchar('\n');
-
 	return (0);
 }
