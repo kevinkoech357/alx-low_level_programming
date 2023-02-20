@@ -2,25 +2,24 @@
 
 /**
  * main - Entry point
- *
+ * prints combo of single digit numbers
  * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	int n;
+	int combo;
 
-	for (n = 0; n < 10; n++)
+	for (combo = 0; combo < 10; combo++)
 	{
-		putchar(n % 10 + '0');
+		putchar(combo % 10 + '0');
 
-		if (n != 9)
+		if (combo != 9)
 		{
 			putchar(',');
 			putchar(' ');
 		}
 	}
 	putchar('\n');
-
 	return (0);
 }
