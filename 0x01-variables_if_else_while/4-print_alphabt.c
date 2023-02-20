@@ -2,21 +2,22 @@
 
 /**
  * main - Entry point
- *
+ * prints the aplhabet
+ * without letters q and e
  * Return: Always 0 (success)
  */
 
 int main(void)
 {
-	char ch = 'a';
+	char alpha = 'a';
 
-	while (ch <= 'z')
+	while (alpha <= 'z')
 	{
-		if (ch != 'q' && ch != 'e')
+		if (alpha != 'q' && alpha != 'e')
 		{
-			putchar(ch);
+			putchar(alpha);
 		}
-	ch++;
+		alpha++;
 	}
 	putchar('\n');
 	return (0);
