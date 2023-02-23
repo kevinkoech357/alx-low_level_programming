@@ -3,6 +3,8 @@
 /**
  * print_line - draws a line in the terminal
  *
+ * @n: number of _ to be printed
+ *
  * Return: Always void
  */
 
