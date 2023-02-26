@@ -20,11 +20,10 @@ void times_table(void)
 			if (j == 0)
 			{
 				_putchar(ans + '0');
-				_putchar('\n');
 			}
 			if (ans < 10 && j != 0)
 			{
-				_putchar('0');
+				_putchar(',');
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(ans + '0');
@@ -37,5 +36,6 @@ void times_table(void)
 				_putchar((ans % 10) + '0');
 			}
 		}
+		_putchar('\n');
 	}
 }
