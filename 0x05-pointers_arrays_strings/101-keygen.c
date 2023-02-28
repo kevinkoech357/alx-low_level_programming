@@ -2,7 +2,7 @@
 #include <time.h>
 #include <stdlib.h>
 
-#define PASSWORD_LENGTH 6
+#define PASSWORD_LENGTH 14
 
 /**
  * main -  generates random valid passwords
@@ -14,7 +14,7 @@
 
 int main(void)
 {
-	const char charset[] = "0123456789abcdefghijklmnopxrstuvwxyzABCDEFGHIJKLMNOPXRSTUVWXYZ,./;*&^%$#@!~";
+	const char charset[] = " 0123456789abcdefghijklmnopxrstuvwxyzABCDEFGHIJKLMNOPXRSTUVWXYZ,./;*&^%$#@!~";
 	const size_t charset_size = sizeof(charset) - 1;
 	char password[PASSWORD_LENGTH + 1];
 	int i;
