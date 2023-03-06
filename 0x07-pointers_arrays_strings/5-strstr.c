@@ -7,7 +7,8 @@
  *
  * @needle: string involved
  *
- * Return: poiner
+ * Return: pointer to beginning
+ * of located substring
  * or NULL if string aint found
  */
 
