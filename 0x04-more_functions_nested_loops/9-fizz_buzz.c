@@ -8,7 +8,7 @@
 
 int main(void)
 {
-	unsigned int num;
+	int num;
 
 	for (num = 1; num < 101; num++)
 	{
