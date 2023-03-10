@@ -1,12 +1,15 @@
 #include <stdio.h>
 
 /**
+ * main - entry point
  *
+ * Description: prints command line arguments
  *
+ * @argc: number of arguments
  *
+ * @argv: array of character commands
  *
- *
- *
+ * Return: 0
  *
  */
 
