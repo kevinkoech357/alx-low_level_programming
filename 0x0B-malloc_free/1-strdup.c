@@ -34,7 +34,7 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	string = strdup(str);
+	strcpy(string, str);
 
 	return (string);
 }
