@@ -23,7 +23,7 @@ int main(int args, char *argv[])
 	if (args != 4)
 	{
 		printf("Error\n");
-		exit (98);
+		exit(98);
 	}
 
 	operator = get_op_func(argv[2]);
@@ -31,16 +31,16 @@ int main(int args, char *argv[])
 	if (!operator)
 	{
 		printf("Error\n");
-		exit (99);
+		exit(99);
 	}
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
-		
+
 	if ((*argv[2] == '/' || *argv[2] == '%') && num2 == 0)
 	{
 		printf("Error\n");
-		exit (100);
+		exit(100);
 	}
 
 	result = operator(num1, num2);
