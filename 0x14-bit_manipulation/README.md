@@ -8,7 +8,7 @@ Operators used:
 
 ^ - inclusive OR (XOR)
 
->> : right shift
+>>  right shift
 
 << - left shift
 
