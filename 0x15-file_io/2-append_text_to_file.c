@@ -1,13 +1,11 @@
 #include "main.h"
 
 /**
-* append_text_to_file - function definition
-*
-* Description: appends text to file
+* append_text_to_file - appends text to file
 *
 * @filename: pointer to the file
 *
-* @text_content - pointer to contents to be appended
+* @text_content:  pointer to contents to be appended
 *
 * Return: 1 if success and -1 if not
 *

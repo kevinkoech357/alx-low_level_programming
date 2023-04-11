@@ -5,7 +5,7 @@
 *
 * @filename: pointer to the filename to be created
 *
-* @text_content - pointer to string to write to file
+* @text_content: pointer to string to write to file
 *
 * Return: 1 on sucess and -1 if it fails
 *
@@ -32,7 +32,7 @@ int create_file(const char *filename, char *text_content)
 		if (wr == -1)
 		{
 			close(op);
-			return(-1);
+			return (-1);
 		}
 	}
 
