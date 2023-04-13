@@ -22,7 +22,6 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
 		exit(97);
 	}
-
 	firstFile = open(argv[1], O_RDONLY, 0);
 	if (firstFile == -1)
 	{
@@ -43,7 +42,8 @@ int main(int argc, char *argv[])
 	}
 	if (size == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]), exit(98);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
+		exit(98);
 	}
 	if (close(firstFile) != 0)
 	{
