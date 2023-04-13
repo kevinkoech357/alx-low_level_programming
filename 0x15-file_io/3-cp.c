@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 	}
 	if (size == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]), exit(98);
 	}
 	if (close(firstFile) != 0)
 	{
