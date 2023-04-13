@@ -26,7 +26,7 @@ int main(int argc, char *argv[])
 	firstFile = open(argv[1], O_RDONLY, 0);
 	if (firstFile == -1)
 	{
-		dprintf(STDERR_FILENO, "Can't read from file %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	secondFile = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
@@ -38,12 +38,12 @@ int main(int argc, char *argv[])
 	{
 		if (write(secondFile, buffer, size) != size)
 		{
-			dprintf(STDERR_FILENO, "Can't write to %s\n", argv[2]), exit(99);
+			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]), exit(99);
 		}
 	}
 	if (size == -1)
 	{
-		dprintf(STDERR_FILENO, "Can't read from %s\n", argv[1]), exit(99);
+		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]), exit(99);
 	}
 	if (close(firstFile) != 0)
 	{
