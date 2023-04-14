@@ -58,7 +58,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 	}
 
 	check_elf(header->e_ident);
-	printf("Elf Header:\n");
+	printf("ELF Header:\n");
 	show_magic(header->e_ident);
 	show_class(header->e_ident);
 	show_data(header->e_ident);
