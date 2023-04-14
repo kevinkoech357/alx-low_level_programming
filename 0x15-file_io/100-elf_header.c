@@ -1,6 +1,10 @@
 #include <elf.h>
 #include <stdlib.h>
-#include "main.h"
+#include <stdio.h>
+#include <unistd.h>
+#include <sys/types.h>
+#include <sys/stat.h>
+#include <fcntl.h>
 
 /* Prototypes */
 void check_elf(unsigned char *e_ident);
@@ -66,6 +70,7 @@ int main(int __attribute__((__unused__)) argc, char *argv[])
 
 	free(header);
 	close_elf(op);
+
 	return (0);
 }
 
@@ -106,7 +111,7 @@ void show_magic(unsigned char *e_ident)
 {
 	int i;
 
-	printf("  Magic   ");
+	printf("  Magic:   ");
 
 	for (i = 0; i < EI_NIDENT; i++)
 	{
