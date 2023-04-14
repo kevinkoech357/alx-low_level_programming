@@ -106,13 +106,17 @@ void show_magic(unsigned char *e_ident)
 {
 	int i;
 
-	printf("  Magic  ");
+	printf("  Magic   ");
 
 	for (i = 0; i < EI_NIDENT; i++)
 	{
-		printf("%02x ", e_ident[i]);
+		printf("%02x", e_ident[i]);
+
+		if (i == EI_NIDENT - 1)
+			printf("\n");
+		else
+			printf(" ");
 	}
-	printf("\n");
 }
 
 /**
@@ -273,7 +277,7 @@ void show_type(unsigned int e_type, unsigned char *e_ident)
 	switch (e_type)
 	{
 		case ET_NONE:
-			printf("NONE\n");
+			printf("NONE (None)\n");
 			break;
 		case ET_REL:
 			printf("REL (Relocatable file)\n");
@@ -316,7 +320,7 @@ void show_entry_point(unsigned long int e_entry, unsigned char *e_ident)
 	if (e_ident[EI_CLASS] == ELFCLASS32)
 		printf("%#x\n", (unsigned int)e_entry);
 	else
-		printf("%#1lx\n", e_entry);
+		printf("%#lx\n", e_entry);
 }
 
 /**
