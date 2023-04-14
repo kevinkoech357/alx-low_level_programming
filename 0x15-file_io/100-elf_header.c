@@ -125,7 +125,7 @@ void show_magic(unsigned char *e_ident)
 
 void show_class(unsigned char *e_ident)
 {
-	printf("  Class:                 ");
+	printf("  Class:                             ");
 
 	switch (e_ident[EI_CLASS])
 	{
@@ -153,7 +153,7 @@ void show_class(unsigned char *e_ident)
 
 void show_data(unsigned char *e_ident)
 {
-	printf("  Data:                 ");
+	printf("  Data:                              ");
 
 	switch (e_ident[EI_DATA])
 	{
@@ -181,7 +181,7 @@ void show_data(unsigned char *e_ident)
 
 void show_version(unsigned char *e_ident)
 {
-	printf("  Version:                 %d", e_ident[EI_VERSION]);
+	printf("  Version:                           %d", e_ident[EI_VERSION]);
 
 	switch (e_ident[EI_VERSION])
 	{
@@ -204,7 +204,7 @@ void show_version(unsigned char *e_ident)
 
 void show_osabi(unsigned char *e_ident)
 {
-	printf("  OS/ABI:                ");
+	printf("  OS/ABI:                            ");
 
 	switch (e_ident[EI_OSABI])
 	{
@@ -250,7 +250,7 @@ void show_osabi(unsigned char *e_ident)
 
 void show_abi(unsigned char *e_ident)
 {
-	printf("  ABI Version:                  %d\n", e_ident[EI_ABIVERSION]);
+	printf("  ABI Version:                       %d\n", e_ident[EI_ABIVERSION]);
 }
 
 /**
@@ -268,7 +268,7 @@ void show_type(unsigned int e_type, unsigned char *e_ident)
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 		e_type = e_type >> 8;
 
-	printf("  Type:                 ");
+	printf("  Type:                              ");
 
 	switch (e_type)
 	{
@@ -304,7 +304,7 @@ void show_type(unsigned int e_type, unsigned char *e_ident)
 
 void show_entry_point(unsigned long int e_entry, unsigned char *e_ident)
 {
-	printf("  Entry point address:                ");
+	printf("  Entry point address:               ");
 
 	if (e_ident[EI_DATA] == ELFDATA2MSB)
 	{
