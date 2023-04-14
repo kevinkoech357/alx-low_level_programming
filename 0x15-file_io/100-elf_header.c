@@ -218,7 +218,7 @@ void show_osabi(unsigned char *e_ident)
 	switch (e_ident[EI_OSABI])
 	{
 		case ELFOSABI_NONE:
-			printf("UNIX - Systerm V \n");
+			printf("UNIX - Systerm V\n");
 			break;
 		case ELFOSABI_HPUX:
 			printf("UNIX - HP-UX\n");
