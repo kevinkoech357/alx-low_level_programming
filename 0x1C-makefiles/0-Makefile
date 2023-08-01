@@ -6,7 +6,7 @@ CC = gcc
 all = school
 
 # Command to compile
-school: main.c school.c
+all: main.c school.c m.h
 	$(CC) main.c school.c -o school
 
 # Remove any previous execs
