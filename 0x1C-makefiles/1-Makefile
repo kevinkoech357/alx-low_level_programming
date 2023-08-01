@@ -1,0 +1,11 @@
+# compiler settings
+CC = gcc
+SRC = main.c school.c
+
+# command to compile
+all:
+	$(CC) $(SRC) -o school
+
+# command to clean
+clean:
+	rm -f school
