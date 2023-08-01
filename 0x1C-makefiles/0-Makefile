@@ -1,0 +1,14 @@
+# compiler settings
+CC = gcc
+# CFLAGS = -Wall -Werror -pedantic -std=c89
+
+# Target and dependecies
+all = school
+
+# Command to compile
+school: main.c school.c
+	$(CC) main.c school.c -o school
+
+# Remove any previous execs
+clean:
+	rm -f school
