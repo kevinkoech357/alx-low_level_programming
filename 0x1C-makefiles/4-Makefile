@@ -1,0 +1,26 @@
+# compiler settings
+CC = gcc
+CFLAGS = -Wall -Werror -Wextra -pedantic
+SRC = main.c school.c
+OBJ = $(SRC:.c=.o)
+NAME = school
+RM = rm -f
+
+# command to compile
+all: $(OBJ)
+	$(CC) $(CFLAGS) $(SRC) -o $(NAME)
+
+# command to delete all emacs, vim and executable files
+clean:
+	$(RM) *~ *.swp $(NAME)
+
+# delete object files
+oclean:
+	$(RM) $(OBJ)
+
+# command to delete all emacs,vim, .exe and object files
+fclean: clean oclean
+
+# command to force recompilation of all source files
+re: fclean all
+
