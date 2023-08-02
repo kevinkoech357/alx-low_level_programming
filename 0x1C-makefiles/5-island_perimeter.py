@@ -1,5 +1,11 @@
 #!/usr/bin/python3
 
+"""
+A module that computes the perimeter of a grid
+which is a list of list of integers"
+"""
+
+
 def island_perimeter(grid):
     """
     Calculates perimeter of a given grid.
