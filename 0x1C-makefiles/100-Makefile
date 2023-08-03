@@ -4,7 +4,9 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = school
-RM = rm -f
+
+# phony target to avoid filename conflicts
+.PHONY: all clean oclean fclean re
 
 # command to compile
 # wont compile if header file is missing
@@ -24,6 +26,3 @@ fclean: clean oclean
 
 # command to force recompilation of all source files
 re: fclean all
-
-# phony target to avoid filename conflicts
-.PHONY: all clean oclean fclean re
